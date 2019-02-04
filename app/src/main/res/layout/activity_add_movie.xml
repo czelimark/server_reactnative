@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/title_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Movie Title"
+            android:inputType="textPersonName"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/genre_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/title_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Genre"
+            android:inputType="textPersonName"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/director_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/genre_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Director"
+            android:inputType="textPersonName"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/year_edit_text"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/director_edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="textPersonName"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/add_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/year_edit_text"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="ADD"
+            android:textColor="@android:color/holo_blue_bright" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_main">
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
